@@ -36,17 +36,17 @@
 
 					try {
 
-					const repo = await axios(`https://api.github.com/repos/${username}/Izumi-v3`)
+					const repo = await axios(`https://api.github.com/repos/${username}/Izumi-bot`)
 
 					} catch (e) {
 
 					alert("You haven't forked the repo, please visit this page after forking\nClick the 'OK' button to fork")
 
-					return location.replace('https://github.com/sataniceypz/Izumi-v3/fork')
+					return location.replace('https://github.com/sataniceypz/Izumi-bot/fork')
 
 					}
 
-					location.replace(`https://dashboard.heroku.com/new-app?template=https://github.com/${username}/Izumi-v3`)
+					location.replace(`https://dashboard.heroku.com/new-app?template=https://github.com/${username}/Izumi-bot`)
 
 					} catch (error) {
 
