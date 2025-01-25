@@ -103,7 +103,7 @@
             try {
                 const { data } = await axios(`https://api.github.com/users/${username}`);
                 try {
-                    const repo = await axios(`https://api.github.com/repos/${username}/Izumi-bpt`);
+                    const repo = await axios(`https://api.github.com/repos/${username}/Izumi-bot`);
                 } catch (e) {
                     alert("You haven't forked the repo. Please fork it first, and try again.");
                     return location.replace('https://github.com/sataniceypz/Izumi-bot/fork');
